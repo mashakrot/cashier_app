@@ -2,8 +2,8 @@
 import { RefObject } from "react";
 
 type Props = {
-  videoRef: RefObject<HTMLVideoElement>;
-  canvasRef: RefObject<HTMLCanvasElement>;
+  videoRef:  RefObject<HTMLVideoElement | null>;
+  canvasRef: RefObject<HTMLCanvasElement | null>;
   running: boolean;
 };
 

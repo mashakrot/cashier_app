@@ -4,8 +4,8 @@ import type { Detection, ReceiptItem } from "@/app/page";
 import Receipt from "@/components/Receipt";
 
 type Props = {
-  videoRef:  RefObject<HTMLVideoElement>;
-  canvasRef: RefObject<HTMLCanvasElement>;
+  videoRef:  RefObject<HTMLVideoElement | null>;
+  canvasRef: RefObject<HTMLCanvasElement | null>;
   running:   boolean;
   pending:   Detection[];
   receipt:   ReceiptItem[];
